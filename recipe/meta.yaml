@@ -21,6 +21,7 @@ requirements:
     - pip
   run:
     - python >=3.8
+    - jupyter_client >=8.6.3
     - tomli >=2.0.1
 
 test:
