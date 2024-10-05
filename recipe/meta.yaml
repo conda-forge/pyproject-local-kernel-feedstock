@@ -11,6 +11,8 @@ source:
 
 build:
   noarch: python
+  entry_points:
+    - pyproject_local_kernel = pyproject_local_kernel.main:main
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
@@ -23,12 +25,14 @@ requirements:
     - python >=3.8
     - jupyter_client >=8.6.3
     - tomli >=2.0.1
+    - traitlets >=5.14.3
 
 test:
   imports:
     - pyproject_local_kernel
   commands:
     - pip check
+    - pyproject_local_kernel --help
   requires:
     - pip
 
