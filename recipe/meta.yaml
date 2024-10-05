@@ -1,5 +1,5 @@
 {% set name = "pyproject-local-kernel" %}
-{% set version = "0.10.1" %}
+{% set version = "0.11.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyproject_local_kernel-{{ version }}.tar.gz
-  sha256: 01e9f38e1af8e1adbda14c69c36845b4a2296880b8360d3e4d70add63ad093e6
+  sha256: f38dcf75f9ab440d63778f96b39914a19e4d613467f0b8f69f2c4d7d3761a7d1
 
 build:
   noarch: python
